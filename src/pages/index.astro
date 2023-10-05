@@ -3,6 +3,7 @@ const response = await fetch("https://kea-alt-del.dk/t7/api/products");
 const data = await response.json();
 console.log(data);
 import Product from "../components/Product.astro";
+import Menu from "../components/Menu.astro";
 ---
 
 <html lang="en">
@@ -14,6 +15,7 @@ import Product from "../components/Product.astro";
     <title>Astro</title>
   </head>
   <body>
+    <Menu />
     <h1>Astro</h1>
     <section>
       {
